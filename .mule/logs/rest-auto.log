@@ -1,0 +1,164 @@
+2018-01-10 09:33:34,735 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'Rest-auto'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 09:33:34,963 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 09:33:35,080 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 09:33:35,192 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 09:33:35,192 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 09:33:35,306 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@73511076: startup date [Wed Jan 10 09:33:35 IST 2018]; root of context hierarchy
+2018-01-10 09:33:36,581 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 09:33:37,399 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 09:33:38,301 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\Rest-auto\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\Rest-auto\queue-tx-log\tx2.log
+2018-01-10 09:33:38,316 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\Rest-auto\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\Rest-auto\queue-xa-tx-log\tx2.log
+2018-01-10 09:33:38,448 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 09:33:38,452 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: indian_airways-main
+2018-01-10 09:33:38,453 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2018-01-10 09:33:38,457 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2018-01-10 09:33:38,457 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2018-01-10 09:33:38,457 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2018-01-10 09:33:38,458 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2018-01-10 09:33:38,477 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: indian_airways-main.stage1
+2018-01-10 09:33:38,486 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: indian_airways-console
+2018-01-10 09:33:38,486 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@415ef4d8
+2018-01-10 09:33:38,491 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: indian_airways-console.stage1
+2018-01-10 09:33:38,494 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights:indian_airways-config
+2018-01-10 09:33:38,494 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@479ac2cb
+2018-01-10 09:33:38,498 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights:indian_airways-config.stage1
+2018-01-10 09:33:38,499 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights/{ID}:indian_airways-config
+2018-01-10 09:33:38,499 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4b1ec694
+2018-01-10 09:33:38,502 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights/{ID}:indian_airways-config.stage1
+2018-01-10 09:33:38,503 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/flights:indian_airways-config
+2018-01-10 09:33:38,503 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3fcee3d9
+2018-01-10 09:33:38,507 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/flights:indian_airways-config.stage1
+2018-01-10 09:33:38,507 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: raml-consumeFlow
+2018-01-10 09:33:38,507 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@161dd92a
+2018-01-10 09:33:38,511 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: raml-consumeFlow.stage1
+2018-01-10 09:33:38,930 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2018-01-10 09:33:39,237 [main] INFO  org.mule.api.security.tls.TlsProperties - Loading configuration file: tls-default.conf
+2018-01-10 09:33:39,251 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\Rest-auto\indian_airways.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\Rest-auto\raml-consume.xml'}]"
+2018-01-10 09:33:39,251 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\Rest-auto\indian_airways.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\Rest-auto\raml-consume.xml'}]"
+2018-01-10 09:33:42,283 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'Rest-auto'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 09:33:42,292 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 09:33:42,292 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 09:33:42,395 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-10 09:33:42,397 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 09:33:42,399 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 09:33:42,400 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: indian_airways-main
+2018-01-10 09:33:42,400 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: indian_airways-main.stage1
+2018-01-10 09:33:42,408 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://127.0.0.1:8081/console                            *
+********************************************************************************
+2018-01-10 09:33:42,408 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: indian_airways-console
+2018-01-10 09:33:42,408 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: indian_airways-console.stage1
+2018-01-10 09:33:42,423 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights:indian_airways-config
+2018-01-10 09:33:42,423 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights:indian_airways-config.stage1
+2018-01-10 09:33:42,425 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights/{ID}:indian_airways-config
+2018-01-10 09:33:42,425 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights/{ID}:indian_airways-config.stage1
+2018-01-10 09:33:42,427 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/flights:indian_airways-config
+2018-01-10 09:33:42,427 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/flights:indian_airways-config.stage1
+2018-01-10 09:33:42,429 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: raml-consumeFlow
+2018-01-10 09:33:42,429 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: raml-consumeFlow.stage1
+2018-01-10 09:33:42,803 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 09:33:42,828 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: Rest-auto                                             *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 09:34:04,816 [[Rest-auto].indian_airways-httpListenerConfig.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - Successfull
+2018-01-12 08:29:37,596 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'Rest-auto'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-12 08:29:37,768 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-12 08:29:37,877 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-12 08:29:37,974 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-12 08:29:37,974 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-12 08:29:38,052 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@73511076: startup date [Fri Jan 12 08:29:38 IST 2018]; root of context hierarchy
+2018-01-12 08:29:39,537 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-12 08:29:40,311 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-12 08:29:41,045 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\Rest-auto\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\Rest-auto\queue-tx-log\tx2.log
+2018-01-12 08:29:41,051 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\Rest-auto\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\Rest-auto\queue-xa-tx-log\tx2.log
+2018-01-12 08:29:41,145 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-12 08:29:41,160 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: indian_airways-main
+2018-01-12 08:29:41,160 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2018-01-12 08:29:41,160 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2018-01-12 08:29:41,160 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2018-01-12 08:29:41,160 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2018-01-12 08:29:41,160 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2018-01-12 08:29:41,176 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: indian_airways-main.stage1
+2018-01-12 08:29:41,192 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: indian_airways-console
+2018-01-12 08:29:41,192 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6d229b1c
+2018-01-12 08:29:41,192 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: indian_airways-console.stage1
+2018-01-12 08:29:41,192 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights:indian_airways-config
+2018-01-12 08:29:41,192 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6c184d4d
+2018-01-12 08:29:41,207 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights:indian_airways-config.stage1
+2018-01-12 08:29:41,207 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights/{ID}:indian_airways-config
+2018-01-12 08:29:41,207 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1c52552f
+2018-01-12 08:29:41,207 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights/{ID}:indian_airways-config.stage1
+2018-01-12 08:29:41,207 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: post:/flights:indian_airways-config
+2018-01-12 08:29:41,207 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5b40de43
+2018-01-12 08:29:41,207 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: post:/flights:indian_airways-config.stage1
+2018-01-12 08:29:41,207 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: raml-consumeFlow
+2018-01-12 08:29:41,207 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1e7f19b4
+2018-01-12 08:29:41,207 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: raml-consumeFlow.stage1
+2018-01-12 08:29:41,739 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2018-01-12 08:29:41,989 [main] INFO  org.mule.api.security.tls.TlsProperties - Loading configuration file: tls-default.conf
+2018-01-12 08:29:42,020 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\Rest-auto\indian_airways.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\Rest-auto\raml-consume.xml'}]"
+2018-01-12 08:29:42,020 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\Rest-auto\indian_airways.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\Rest-auto\raml-consume.xml'}]"
+2018-01-12 08:29:45,036 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'Rest-auto'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-12 08:29:45,046 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-12 08:29:45,046 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-12 08:29:45,124 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-12 08:29:45,124 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-12 08:29:45,124 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-12 08:29:45,124 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: indian_airways-main
+2018-01-12 08:29:45,124 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: indian_airways-main.stage1
+2018-01-12 08:29:45,139 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://127.0.0.1:8081/console                            *
+********************************************************************************
+2018-01-12 08:29:45,139 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: indian_airways-console
+2018-01-12 08:29:45,139 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: indian_airways-console.stage1
+2018-01-12 08:29:45,139 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights:indian_airways-config
+2018-01-12 08:29:45,139 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights:indian_airways-config.stage1
+2018-01-12 08:29:45,139 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights/{ID}:indian_airways-config
+2018-01-12 08:29:45,139 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights/{ID}:indian_airways-config.stage1
+2018-01-12 08:29:45,139 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: post:/flights:indian_airways-config
+2018-01-12 08:29:45,139 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: post:/flights:indian_airways-config.stage1
+2018-01-12 08:29:45,139 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: raml-consumeFlow
+2018-01-12 08:29:45,139 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: raml-consumeFlow.stage1
+2018-01-12 08:29:45,342 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-12 08:29:45,358 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: Rest-auto                                             *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-12 08:30:22,820 [[Rest-auto].indian_airways-httpListenerConfig.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Successfull

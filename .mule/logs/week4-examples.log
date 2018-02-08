@@ -1,0 +1,428 @@
+2018-01-08 13:30:41,388 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'week4-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 13:30:41,627 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-08 13:30:41,735 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-08 13:30:41,844 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-08 13:30:41,845 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-08 13:30:41,926 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@73511076: startup date [Mon Jan 08 13:30:41 IST 2018]; root of context hierarchy
+2018-01-08 13:30:43,235 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-08 13:30:44,042 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-08 13:30:44,705 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-tx-log\tx2.log
+2018-01-08 13:30:44,722 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-xa-tx-log\tx2.log
+2018-01-08 13:30:44,729 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2018-01-08 13:30:44,834 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-08 13:30:44,837 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: accountsFlow
+2018-01-08 13:30:44,838 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@33188612
+2018-01-08 13:30:44,860 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: accountsFlow.stage1
+2018-01-08 13:30:44,869 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: week4-examplesFlow
+2018-01-08 13:30:44,869 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@73613ae5
+2018-01-08 13:30:44,873 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: week4-examplesFlow.stage1
+2018-01-08 13:30:44,874 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flow1
+2018-01-08 13:30:44,874 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5dfe23e8
+2018-01-08 13:30:44,877 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flow1.stage1
+2018-01-08 13:30:45,313 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\accounts.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\global.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\week4-examples.xml'}]"
+2018-01-08 13:30:45,313 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\accounts.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\global.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\week4-examples.xml'}]"
+2018-01-08 13:30:51,345 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'week4-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 13:30:51,352 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-08 13:30:51,352 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-08 13:30:51,406 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-08 13:30:51,408 [main] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=4dde8976
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2018-01-08 13:30:51,408 [main] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=4dde8976
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2018-01-08 13:30:51,409 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2018-01-08 13:30:51,411 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-08 13:30:51,413 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-08 13:30:51,414 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: accountsFlow
+2018-01-08 13:30:51,415 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: accountsFlow.stage1
+2018-01-08 13:30:51,419 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: week4-examplesFlow
+2018-01-08 13:30:51,419 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: week4-examplesFlow.stage1
+2018-01-08 13:30:51,421 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flow1
+2018-01-08 13:30:51,421 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flow1.stage1
+2018-01-08 13:30:51,599 [main] INFO  org.mule.transport.vm.VMConnector - Registering listener: flow1 on endpointUri: vm://vmflow
+2018-01-08 13:30:51,615 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2018-01-08 13:30:51,617 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2018-01-08 13:30:51,619 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2018-01-08 13:30:51,619 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2018-01-08 13:30:51,626 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-08 13:30:51,652 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.week4-examples:type=Endpoint,service="flow1",connector=connector.VM.mule.default,name="endpoint.vm.vmflow"
+2018-01-08 13:30:51,654 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.week4-examples:type=Endpoint,service="flow1",connector=connector.VM.mule.default,name="endpoint.vm.vmflow"
+2018-01-08 13:30:51,658 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.week4-examples:type=Connector,name="connector.VM.mule.default"
+2018-01-08 13:30:51,663 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: week4-examples                                        *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-08 13:31:03,466 [[week4-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.VM.mule.default.dispatcher.772884148'. Object is: VMMessageDispatcher
+2018-01-08 13:31:03,466 [[week4-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.VM.mule.default.dispatcher.772884148'. Object is: VMMessageDispatcher
+2018-01-08 13:31:03,476 [[week4-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=128765b0-f44a-11e7-aab6-98eecb1e3db5
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    MULE_ENDPOINT=vm://vmflow
+    MULE_ORIGINATING_ENDPOINT=endpoint.vm.vmflow
+    MULE_SESSION=rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMTI4ODAxZjAtZjQ0YS0xMWU3LWFhYjYtOThlZWNiMWUzZGI1c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAABdAAEdGVhbXNyACVvcmcubXVsZS50cmFuc2Zvcm1lci50eXBlcy5UeXBlZFZhbHVlXcfT8r0/essCAAJMAAhkYXRhVHlwZXQAI0xvcmcvbXVsZS9hcGkvdHJhbnNmb3JtZXIvRGF0YVR5cGU7TAAFdmFsdWVxAH4ACHhwc3IAKW9yZy5tdWxlLnRyYW5zZm9ybWVyLnR5cGVzLlNpbXBsZURhdGFUeXBl3+dPKpGE2wMCAANMAAhlbmNvZGluZ3EAfgACTAAIbWltZVR5cGVxAH4AAkwABHR5cGV0ABFMamF2YS9sYW5nL0NsYXNzO3hwcHQAAyovKnZyABBqYXZhLmxhbmcuU3RyaW5noPCkOHo7s0ICAAB4cHQAA3JjYnhxAH4ACXhweA==
+  OUTBOUND scoped properties:
+    MULE_CORRELATION_GROUP_SIZE=-1
+    MULE_CORRELATION_SEQUENCE=-1
+  SESSION scoped properties:
+    team=rcb
+}
+2018-01-08 13:31:03,501 [[week4-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Name: null Type: null Team: rcb
+2018-01-08 13:32:17,696 [[week4-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/hello/flights
+2018-01-08 13:32:17,696 [[week4-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/hello/, ([get])/sfdc/]
+2018-01-08 13:32:22,212 [[week4-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=4184d0f0-f44a-11e7-aab6-98eecb1e3db5
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    MULE_ENDPOINT=vm://vmflow
+    MULE_ORIGINATING_ENDPOINT=endpoint.vm.vmflow
+    MULE_SESSION=rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkNDE4NGQwZjEtZjQ0YS0xMWU3LWFhYjYtOThlZWNiMWUzZGI1c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAABdAAEdGVhbXNyACVvcmcubXVsZS50cmFuc2Zvcm1lci50eXBlcy5UeXBlZFZhbHVlXcfT8r0/essCAAJMAAhkYXRhVHlwZXQAI0xvcmcvbXVsZS9hcGkvdHJhbnNmb3JtZXIvRGF0YVR5cGU7TAAFdmFsdWVxAH4ACHhwc3IAKW9yZy5tdWxlLnRyYW5zZm9ybWVyLnR5cGVzLlNpbXBsZURhdGFUeXBl3+dPKpGE2wMCAANMAAhlbmNvZGluZ3EAfgACTAAIbWltZVR5cGVxAH4AAkwABHR5cGV0ABFMamF2YS9sYW5nL0NsYXNzO3hwcHQAAyovKnZyABBqYXZhLmxhbmcuU3RyaW5noPCkOHo7s0ICAAB4cHQAA3JjYnhxAH4ACXhweA==
+  OUTBOUND scoped properties:
+    MULE_CORRELATION_GROUP_SIZE=-1
+    MULE_CORRELATION_SEQUENCE=-1
+  SESSION scoped properties:
+    team=rcb
+}
+2018-01-08 13:32:22,215 [[week4-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Name: null Type: null Team: rcb
+2018-01-08 13:35:36,021 [[week4-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=b50a0720-f44a-11e7-aab6-98eecb1e3db5
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    MULE_ENDPOINT=vm://vmflow
+    MULE_ORIGINATING_ENDPOINT=endpoint.vm.vmflow
+    MULE_SESSION=rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkYjUwYTA3MjEtZjQ0YS0xMWU3LWFhYjYtOThlZWNiMWUzZGI1c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAABdAAEdGVhbXNyACVvcmcubXVsZS50cmFuc2Zvcm1lci50eXBlcy5UeXBlZFZhbHVlXcfT8r0/essCAAJMAAhkYXRhVHlwZXQAI0xvcmcvbXVsZS9hcGkvdHJhbnNmb3JtZXIvRGF0YVR5cGU7TAAFdmFsdWVxAH4ACHhwc3IAKW9yZy5tdWxlLnRyYW5zZm9ybWVyLnR5cGVzLlNpbXBsZURhdGFUeXBl3+dPKpGE2wMCAANMAAhlbmNvZGluZ3EAfgACTAAIbWltZVR5cGVxAH4AAkwABHR5cGV0ABFMamF2YS9sYW5nL0NsYXNzO3hwcHQAAyovKnZyABBqYXZhLmxhbmcuU3RyaW5noPCkOHo7s0ICAAB4cHQAA3JjYnhxAH4ACXhweA==
+    qpname=mahesh
+  OUTBOUND scoped properties:
+    MULE_CORRELATION_GROUP_SIZE=-1
+    MULE_CORRELATION_SEQUENCE=-1
+  SESSION scoped properties:
+    team=rcb
+}
+2018-01-08 13:35:36,023 [[week4-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Name: null Type: shetty Team: rcb
+2018-01-10 09:47:42,260 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'week4-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 09:47:42,464 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 09:47:42,571 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 09:47:42,674 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 09:47:42,674 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 09:47:42,739 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@73511076: startup date [Wed Jan 10 09:47:42 IST 2018]; root of context hierarchy
+2018-01-10 09:47:43,891 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 09:47:44,673 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 09:47:45,273 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-tx-log\tx2.log
+2018-01-10 09:47:45,286 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-xa-tx-log\tx2.log
+2018-01-10 09:47:45,296 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2018-01-10 09:47:45,397 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 09:47:45,400 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: accountsFlow
+2018-01-10 09:47:45,400 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@42d6c12d
+2018-01-10 09:47:45,422 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: accountsFlow.stage1
+2018-01-10 09:47:45,431 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: week4-examplesFlow
+2018-01-10 09:47:45,431 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2f80cb79
+2018-01-10 09:47:45,436 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: week4-examplesFlow.stage1
+2018-01-10 09:47:45,436 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flow1
+2018-01-10 09:47:45,436 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@f0a66bd
+2018-01-10 09:47:45,440 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flow1.stage1
+2018-01-10 09:47:45,851 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\accounts.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\global.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\week4-examples.xml'}]"
+2018-01-10 09:47:45,851 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\accounts.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\global.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\week4-examples.xml'}]"
+2018-01-10 09:47:48,885 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'week4-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 09:47:48,897 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 09:47:48,897 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 09:47:48,956 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-10 09:47:48,959 [main] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=3408f695
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2018-01-10 09:47:48,959 [main] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=3408f695
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2018-01-10 09:47:48,959 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2018-01-10 09:47:48,962 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 09:47:48,964 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 09:47:48,965 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: accountsFlow
+2018-01-10 09:47:48,966 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: accountsFlow.stage1
+2018-01-10 09:47:48,969 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: week4-examplesFlow
+2018-01-10 09:47:48,970 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: week4-examplesFlow.stage1
+2018-01-10 09:47:48,973 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flow1
+2018-01-10 09:47:48,973 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flow1.stage1
+2018-01-10 09:47:49,130 [main] INFO  org.mule.transport.vm.VMConnector - Registering listener: flow1 on endpointUri: vm://vmflow
+2018-01-10 09:47:49,141 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2018-01-10 09:47:49,142 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2018-01-10 09:47:49,143 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2018-01-10 09:47:49,143 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2018-01-10 09:47:49,152 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 09:47:49,173 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.week4-examples:type=Endpoint,service="flow1",connector=connector.VM.mule.default,name="endpoint.vm.vmflow"
+2018-01-10 09:47:49,173 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.week4-examples:type=Endpoint,service="flow1",connector=connector.VM.mule.default,name="endpoint.vm.vmflow"
+2018-01-10 09:47:49,175 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.week4-examples:type=Connector,name="connector.VM.mule.default"
+2018-01-10 09:47:49,178 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: week4-examples                                        *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 09:48:45,384 [[week4-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Name: mahesh Type: shetty Team: rcb
+2018-01-10 09:56:14,845 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'week4-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 09:56:14,848 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: accountsFlow
+2018-01-10 09:56:14,850 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: accountsFlow.stage1
+2018-01-10 09:56:14,979 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: week4-examplesFlow
+2018-01-10 09:56:14,980 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: week4-examplesFlow.stage1
+2018-01-10 09:56:15,180 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: flow1
+2018-01-10 09:56:15,180 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Removing listener on endpointUri: vm://vmflow
+2018-01-10 09:56:15,182 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: VMMessageReceiver
+2018-01-10 09:56:15,184 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: VMMessageReceiver
+2018-01-10 09:56:15,185 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: flow1.stage1
+2018-01-10 09:56:15,383 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-01-10 09:56:15,390 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.VM.mule.default
+2018-01-10 09:56:15,403 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2018-01-10 09:56:15,407 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-01-10 09:56:15,408 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-01-10 09:56:15,425 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'week4-examples'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 09:56:15,426 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-10 09:56:15,428 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: accountsFlow
+2018-01-10 09:56:15,429 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: accountsFlow.stage1
+2018-01-10 09:56:15,429 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: week4-examplesFlow
+2018-01-10 09:56:15,429 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: week4-examplesFlow.stage1
+2018-01-10 09:56:15,430 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: flow1
+2018-01-10 09:56:15,430 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: flow1.stage1
+2018-01-10 09:56:15,432 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-10 09:56:15,440 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.vm.VMConnector - Disconnected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=stop
+  this=3408f695
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2018-01-10 09:56:15,441 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.VM.mule.default
+2018-01-10 09:56:15,625 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@73511076: startup date [Wed Jan 10 09:47:42 IST 2018]; root of context hierarchy
+2018-01-10 09:56:15,803 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "week4-examples" shut down normally on: 1/10/18 9:56   *
+* AM                                                                 *
+* Up for: 0 days, 0 hours, 8 mins, 26.916 sec                        *
+**********************************************************************
+2018-01-10 09:56:16,005 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'week4-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 09:56:16,012 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app week4-examples
+2018-01-10 09:56:16,019 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 09:56:16,028 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 09:56:16,051 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 09:56:16,052 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 09:56:16,059 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5965c797: startup date [Wed Jan 10 09:56:16 IST 2018]; root of context hierarchy
+2018-01-10 09:56:16,553 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 09:56:16,645 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-tx-log\tx2.log
+2018-01-10 09:56:16,649 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-xa-tx-log\tx2.log
+2018-01-10 09:56:16,658 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 09:56:16,659 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: accountsFlow
+2018-01-10 09:56:16,660 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@51a7220f
+2018-01-10 09:56:16,665 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: accountsFlow.stage1
+2018-01-10 09:56:16,666 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: week4-examplesFlow
+2018-01-10 09:56:16,667 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3b176419
+2018-01-10 09:56:16,672 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: week4-examplesFlow.stage1
+2018-01-10 09:56:16,673 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flow1
+2018-01-10 09:56:16,673 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@412fcdaa
+2018-01-10 09:56:16,677 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flow1.stage1
+2018-01-10 09:56:16,700 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\accounts.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\global.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\week4-examples.xml'}]"
+2018-01-10 09:56:16,701 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\accounts.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\global.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\week4-examples.xml'}]"
+2018-01-10 09:56:20,520 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'week4-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 09:56:20,722 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 09:56:20,819 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 09:56:20,912 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 09:56:20,912 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 09:56:20,978 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@73511076: startup date [Wed Jan 10 09:56:20 IST 2018]; root of context hierarchy
+2018-01-10 09:56:22,159 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 09:56:22,772 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 09:56:23,398 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-tx-log\tx2.log
+2018-01-10 09:56:23,411 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\week4-examples\queue-xa-tx-log\tx2.log
+2018-01-10 09:56:23,493 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 09:56:23,497 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: accountsFlow
+2018-01-10 09:56:23,497 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6dd36ab6
+2018-01-10 09:56:23,520 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: accountsFlow.stage1
+2018-01-10 09:56:23,529 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: week4-examplesFlow
+2018-01-10 09:56:23,529 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2fb25f4c
+2018-01-10 09:56:23,534 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: week4-examplesFlow.stage1
+2018-01-10 09:56:23,536 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flow1
+2018-01-10 09:56:23,536 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5ad1904f
+2018-01-10 09:56:23,541 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flow1.stage1
+2018-01-10 09:56:23,817 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\accounts.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\global.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\week4-examples.xml'}]"
+2018-01-10 09:56:23,817 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\accounts.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\global.xml'}, ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\week4-examples\week4-examples.xml'}]"
+2018-01-10 09:56:26,851 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'week4-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 09:56:26,862 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 09:56:26,863 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 09:56:26,930 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-01-10 09:56:26,932 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 09:56:26,934 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 09:56:26,936 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: accountsFlow
+2018-01-10 09:56:26,936 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: accountsFlow.stage1
+2018-01-10 09:56:26,939 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: week4-examplesFlow
+2018-01-10 09:56:26,939 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: week4-examplesFlow.stage1
+2018-01-10 09:56:26,941 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flow1
+2018-01-10 09:56:26,942 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flow1.stage1
+2018-01-10 09:56:27,112 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 09:56:27,132 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: week4-examples                                        *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 09:56:31,244 [[week4-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=6eeac340-f5be-11e7-8ef0-98eecb1e3db5
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    qptype=shetty
+  INBOUND scoped properties:
+    accept=*/*
+    accept-encoding=gzip, deflate
+    cache-control=no-cache
+    connection=keep-alive
+    host=localhost:8081
+    http.listener.path=/hello
+    http.method=GET
+    http.query.params=ParameterMap{[name=[mahesh], type=[shetty]]}
+    http.query.string=name=mahesh&type=shetty
+    http.relative.path=/hello
+    http.remote.address=/127.0.0.1:64114
+    http.request.path=/hello
+    http.request.uri=/hello?name=mahesh&type=shetty
+    http.scheme=http
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    postman-token=bdf83de0-2f2b-4209-b10d-458d7d84408d
+    user-agent=PostmanRuntime/7.1.1
+  OUTBOUND scoped properties:
+    qpname=mahesh
+  SESSION scoped properties:
+    team=rcb
+}
+2018-01-10 09:56:31,268 [[week4-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Name: mahesh Type: shetty Team: rcb

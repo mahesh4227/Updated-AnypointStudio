@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {},
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "indian-flights-jason"
+        }
+    },
+    "id": "3dc09700-1827-4ba8-8057-a2039faaaa1b",
+    "version": "5.2.0.0"
+}

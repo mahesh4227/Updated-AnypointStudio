@@ -1,0 +1,1308 @@
+2018-01-10 14:34:13,700 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 14:34:13,894 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 14:34:14,017 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 14:34:14,141 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 14:34:14,142 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 14:34:14,222 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 14:34:14 IST 2018]; root of context hierarchy
+2018-01-10 14:34:15,397 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 14:34:16,106 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 14:34:16,336 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx2.log
+2018-01-10 14:34:16,352 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx2.log
+2018-01-10 14:34:16,363 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-10 14:34:16,498 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 14:34:16,502 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-transferFlow
+2018-01-10 14:34:16,502 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6dc1dc69
+2018-01-10 14:34:16,519 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-transferFlow.stage1
+2018-01-10 14:34:16,907 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 14:34:16,907 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 14:34:19,979 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 14:34:19,989 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 14:34:19,989 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 14:34:20,049 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6abdec0e
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 14:34:20,049 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6abdec0e
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 14:34:20,050 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-10 14:34:20,053 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 14:34:20,056 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 14:34:20,058 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-transferFlow
+2018-01-10 14:34:20,059 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-transferFlow.stage1
+2018-01-10 14:34:20,105 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: file-transferFlow on endpointUri: file:///D:/source/
+2018-01-10 14:34:20,459 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-01-10 14:34:20,463 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-01-10 14:34:20,463 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-01-10 14:34:20,463 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-01-10 14:34:20,471 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 14:34:20,487 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 14:34:20,487 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 14:34:20,489 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-transfer:type=Connector,name="connector.file.mule.default"
+2018-01-10 14:34:20,493 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-transfer                                         *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 14:34:21,549 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\jenkins.txt
+2018-01-10 14:34:21,579 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\sample.txt
+2018-01-10 14:34:21,583 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\sample1.txt
+2018-01-10 14:34:21,592 [[file-transfer].file-transferFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=3f3fef40-f5e5-11e7-8b19-98eecb1e3db5
+  payload=org.mule.transport.file.ReceiverFileInputStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    originalDirectory=D:\source
+    originalFilename=jenkins.txt
+  INBOUND scoped properties:
+    MULE_ORIGINATING_ENDPOINT=endpoint..D.source
+    directory=D:\source
+    fileSize=50
+    originalDirectory=D:\source
+    originalFilename=jenkins.txt
+    timestamp=1515382555381
+  OUTBOUND scoped properties:
+    filename=jenkins.txt
+  SESSION scoped properties:
+}
+2018-01-10 14:34:21,604 [[file-transfer].file-transferFlow.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=3f43bfd1-f5e5-11e7-8b19-98eecb1e3db5
+  payload=org.mule.transport.file.ReceiverFileInputStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    originalDirectory=D:\source
+    originalFilename=sample.txt
+  INBOUND scoped properties:
+    MULE_ORIGINATING_ENDPOINT=endpoint..D.source
+    directory=D:\source
+    fileSize=26
+    originalDirectory=D:\source
+    originalFilename=sample.txt
+    timestamp=1515574933036
+  OUTBOUND scoped properties:
+    filename=sample.txt
+  SESSION scoped properties:
+}
+2018-01-10 14:34:21,613 [[file-transfer].file-transferFlow.stage1.04] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=3f443501-f5e5-11e7-8b19-98eecb1e3db5
+  payload=org.mule.transport.file.ReceiverFileInputStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    originalDirectory=D:\source
+    originalFilename=sample1.txt
+  INBOUND scoped properties:
+    MULE_ORIGINATING_ENDPOINT=endpoint..D.source
+    directory=D:\source
+    fileSize=29
+    originalDirectory=D:\source
+    originalFilename=sample1.txt
+    timestamp=1515574964555
+  OUTBOUND scoped properties:
+    filename=sample1.txt
+  SESSION scoped properties:
+}
+2018-01-10 14:34:21,658 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1800930720'. Object is: FileMessageDispatcher
+2018-01-10 14:34:21,658 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1800930720'. Object is: FileMessageDispatcher
+2018-01-10 14:34:21,658 [[file-transfer].connector.file.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1039937185'. Object is: FileMessageDispatcher
+2018-01-10 14:34:21,658 [[file-transfer].connector.file.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1039937185'. Object is: FileMessageDispatcher
+2018-01-10 14:34:21,662 [[file-transfer].connector.file.mule.default.dispatcher.03] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1047467447'. Object is: FileMessageDispatcher
+2018-01-10 14:34:21,662 [[file-transfer].connector.file.mule.default.dispatcher.03] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1047467447'. Object is: FileMessageDispatcher
+2018-01-10 14:34:21,670 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\sample1.txt
+2018-01-10 14:34:21,672 [[file-transfer].connector.file.mule.default.dispatcher.02] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\sample.txt
+2018-01-10 14:34:21,674 [[file-transfer].connector.file.mule.default.dispatcher.03] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\jenkins.txt
+2018-01-10 14:35:28,532 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\jenkins.txt
+2018-01-10 14:35:28,536 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\sample.txt
+2018-01-10 14:35:28,538 [[file-transfer].file-transferFlow.stage1.05] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=672ba941-f5e5-11e7-8b19-98eecb1e3db5
+  payload=org.mule.transport.file.ReceiverFileInputStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    originalDirectory=D:\source
+    originalFilename=jenkins.txt
+  INBOUND scoped properties:
+    MULE_ORIGINATING_ENDPOINT=endpoint..D.source
+    directory=D:\source
+    fileSize=50
+    originalDirectory=D:\source
+    originalFilename=jenkins.txt
+    timestamp=1515575061676
+  OUTBOUND scoped properties:
+    filename=jenkins.txt
+  SESSION scoped properties:
+}
+2018-01-10 14:35:28,545 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\sample1.txt
+2018-01-10 14:35:28,551 [[file-transfer].connector.file.mule.default.dispatcher.02] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\jenkins.txt
+2018-01-10 14:35:28,554 [[file-transfer].file-transferFlow.stage1.05] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=672c6c91-f5e5-11e7-8b19-98eecb1e3db5
+  payload=org.mule.transport.file.ReceiverFileInputStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    originalDirectory=D:\source
+    originalFilename=sample.txt
+  INBOUND scoped properties:
+    MULE_ORIGINATING_ENDPOINT=endpoint..D.source
+    directory=D:\source
+    fileSize=26
+    originalDirectory=D:\source
+    originalFilename=sample.txt
+    timestamp=1515575061675
+  OUTBOUND scoped properties:
+    filename=sample.txt
+  SESSION scoped properties:
+}
+2018-01-10 14:35:28,554 [[file-transfer].file-transferFlow.stage1.06] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=672dcc20-f5e5-11e7-8b19-98eecb1e3db5
+  payload=org.mule.transport.file.ReceiverFileInputStream
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    originalDirectory=D:\source
+    originalFilename=sample1.txt
+  INBOUND scoped properties:
+    MULE_ORIGINATING_ENDPOINT=endpoint..D.source
+    directory=D:\source
+    fileSize=29
+    originalDirectory=D:\source
+    originalFilename=sample1.txt
+    timestamp=1515575061672
+  OUTBOUND scoped properties:
+    filename=sample1.txt
+  SESSION scoped properties:
+}
+2018-01-10 14:35:28,567 [[file-transfer].connector.file.mule.default.dispatcher.04] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\sample.txt
+2018-01-10 14:35:28,570 [[file-transfer].connector.file.mule.default.dispatcher.05] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\sample1.txt
+2018-01-10 14:36:11,438 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 14:36:11,637 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 14:36:11,739 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 14:36:11,841 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 14:36:11,841 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 14:36:11,910 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 14:36:11 IST 2018]; root of context hierarchy
+2018-01-10 14:36:12,936 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 14:36:13,587 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 14:36:13,798 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx2.log
+2018-01-10 14:36:13,811 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx2.log
+2018-01-10 14:36:13,836 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-10 14:36:13,931 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 14:36:13,935 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-transferFlow
+2018-01-10 14:36:13,935 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2676dc05
+2018-01-10 14:36:13,951 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-transferFlow.stage1
+2018-01-10 14:36:14,311 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 14:36:14,311 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 14:36:17,347 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 14:36:17,353 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 14:36:17,353 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 14:36:17,385 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=2f7efd0b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 14:36:17,385 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=2f7efd0b
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 14:36:17,385 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-10 14:36:17,387 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 14:36:17,389 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 14:36:17,390 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-transferFlow
+2018-01-10 14:36:17,391 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-transferFlow.stage1
+2018-01-10 14:36:17,702 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: file-transferFlow on endpointUri: file:///D:/source/
+2018-01-10 14:36:17,720 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-01-10 14:36:17,724 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-01-10 14:36:17,724 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-01-10 14:36:17,724 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-01-10 14:36:17,730 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 14:36:17,744 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 14:36:17,744 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 14:36:17,746 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-transfer:type=Connector,name="connector.file.mule.default"
+2018-01-10 14:36:17,749 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-transfer                                         *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 14:36:18,739 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\jenkins.txt
+2018-01-10 14:36:18,796 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\sample.txt
+2018-01-10 14:36:18,800 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\sample1.txt
+2018-01-10 14:36:18,802 [[file-transfer].file-transferFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - file transfered successfully
+2018-01-10 14:36:18,802 [[file-transfer].file-transferFlow.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - file transfered successfully
+2018-01-10 14:36:18,804 [[file-transfer].file-transferFlow.stage1.04] INFO  org.mule.api.processor.LoggerMessageProcessor - file transfered successfully
+2018-01-10 14:36:18,833 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.261968162'. Object is: FileMessageDispatcher
+2018-01-10 14:36:18,833 [[file-transfer].connector.file.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1205292628'. Object is: FileMessageDispatcher
+2018-01-10 14:36:18,833 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.261968162'. Object is: FileMessageDispatcher
+2018-01-10 14:36:18,833 [[file-transfer].connector.file.mule.default.dispatcher.03] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1383933764'. Object is: FileMessageDispatcher
+2018-01-10 14:36:18,833 [[file-transfer].connector.file.mule.default.dispatcher.03] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1383933764'. Object is: FileMessageDispatcher
+2018-01-10 14:36:18,833 [[file-transfer].connector.file.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1205292628'. Object is: FileMessageDispatcher
+2018-01-10 14:36:18,838 [[file-transfer].connector.file.mule.default.dispatcher.03] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\jenkins.txt
+2018-01-10 14:36:18,838 [[file-transfer].connector.file.mule.default.dispatcher.02] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\sample1.txt
+2018-01-10 14:36:18,839 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\sample.txt
+2018-01-10 16:24:17,081 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:24:17,287 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 16:24:17,397 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 16:24:17,497 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 16:24:17,498 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 16:24:17,570 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 16:24:17 IST 2018]; root of context hierarchy
+2018-01-10 16:24:18,591 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 16:24:19,253 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 16:24:19,469 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx2.log
+2018-01-10 16:24:19,483 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx2.log
+2018-01-10 16:24:19,489 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-10 16:24:19,588 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 16:24:19,591 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-transferFlow
+2018-01-10 16:24:19,591 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@345cbf40
+2018-01-10 16:24:19,605 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-transferFlow.stage1
+2018-01-10 16:24:19,970 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:24:19,970 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:24:23,007 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:24:23,018 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 16:24:23,018 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 16:24:23,051 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3119cf6f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:24:23,051 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3119cf6f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:24:23,051 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-10 16:24:23,053 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:24:23,055 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 16:24:23,056 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-transferFlow
+2018-01-10 16:24:23,057 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-transferFlow.stage1
+2018-01-10 16:24:23,389 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: file-transferFlow on endpointUri: file:///D:/source/
+2018-01-10 16:24:23,407 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:24:23,412 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-01-10 16:24:23,412 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:24:23,412 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-01-10 16:24:23,420 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 16:24:23,436 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:24:23,436 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:24:23,438 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-transfer:type=Connector,name="connector.file.mule.default"
+2018-01-10 16:24:23,443 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-transfer                                         *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 16:24:24,429 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\jenkins.txt
+2018-01-10 16:24:24,474 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\sample.txt
+2018-01-10 16:24:24,479 [[file-transfer].file-transferFlow.stage1.03] INFO  org.mule.api.processor.LoggerMessageProcessor - file transfered successfully
+2018-01-10 16:24:24,479 [[file-transfer].file-transferFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - file transfered successfully
+2018-01-10 16:24:24,504 [[file-transfer].connector.file.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.487659950'. Object is: FileMessageDispatcher
+2018-01-10 16:24:24,504 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1964870154'. Object is: FileMessageDispatcher
+2018-01-10 16:24:24,504 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1964870154'. Object is: FileMessageDispatcher
+2018-01-10 16:24:24,504 [[file-transfer].connector.file.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.487659950'. Object is: FileMessageDispatcher
+2018-01-10 16:24:24,508 [[file-transfer].connector.file.mule.default.dispatcher.02] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\jenkins.txt
+2018-01-10 16:24:24,508 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\sample.txt
+2018-01-10 16:26:08,589 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:26:08,592 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: file-transferFlow
+2018-01-10 16:26:08,592 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///D:/source/
+2018-01-10 16:26:08,595 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:26:08,598 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:26:08,599 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: file-transferFlow.stage1
+2018-01-10 16:26:08,711 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-01-10 16:26:08,718 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2018-01-10 16:26:08,725 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.file.mule.default.dispatcher.487659950'. Object is: FileMessageDispatcher
+2018-01-10 16:26:08,726 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.file.mule.default.dispatcher.487659950'. Object is: FileMessageDispatcher
+2018-01-10 16:26:08,726 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.file.mule.default.dispatcher.1964870154'. Object is: FileMessageDispatcher
+2018-01-10 16:26:08,726 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.file.mule.default.dispatcher.1964870154'. Object is: FileMessageDispatcher
+2018-01-10 16:26:08,731 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-01-10 16:26:08,732 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-01-10 16:26:08,741 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'file-transfer'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:26:08,742 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-10 16:26:08,743 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: file-transferFlow
+2018-01-10 16:26:08,744 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: file-transferFlow.stage1
+2018-01-10 16:26:08,747 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-10 16:26:08,753 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=3119cf6f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:26:08,754 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2018-01-10 16:26:08,915 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 16:24:17 IST 2018]; root of context hierarchy
+2018-01-10 16:26:09,041 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "file-transfer" shut down normally on: 1/10/18 4:26 PM *
+* Up for: 0 days, 0 hours, 1 mins, 46.32 sec                         *
+**********************************************************************
+2018-01-10 16:26:12,989 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:26:13,175 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 16:26:13,283 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 16:26:13,385 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 16:26:13,385 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 16:26:13,472 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 16:26:13 IST 2018]; root of context hierarchy
+2018-01-10 16:26:14,477 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 16:26:15,140 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 16:26:15,353 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx2.log
+2018-01-10 16:26:15,367 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx2.log
+2018-01-10 16:26:15,373 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-10 16:26:15,471 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 16:26:15,474 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-transferFlow
+2018-01-10 16:26:15,474 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5f631ca0
+2018-01-10 16:26:15,488 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-transferFlow.stage1
+2018-01-10 16:26:15,837 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:26:15,837 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:26:18,872 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:26:18,880 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 16:26:18,880 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 16:26:18,915 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6848a051
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:26:18,915 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6848a051
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:26:18,916 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-10 16:26:18,918 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:26:18,920 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 16:26:18,921 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-transferFlow
+2018-01-10 16:26:18,921 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-transferFlow.stage1
+2018-01-10 16:26:18,951 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: file-transferFlow on endpointUri: file:///D:/source/
+2018-01-10 16:26:19,254 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:26:19,258 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-01-10 16:26:19,259 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:26:19,259 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-01-10 16:26:19,265 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 16:26:19,282 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:26:19,282 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:26:19,284 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-transfer:type=Connector,name="connector.file.mule.default"
+2018-01-10 16:26:19,287 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-transfer                                         *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 16:26:20,275 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\123.txt
+2018-01-10 16:26:20,363 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\762984fj.txt
+2018-01-10 16:26:20,366 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\sample1.txt
+2018-01-10 16:26:49,292 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\jenkins.txt
+2018-01-10 16:26:49,298 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\sample.txt
+2018-01-10 16:27:09,364 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:27:09,368 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: file-transferFlow
+2018-01-10 16:27:09,368 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///D:/source/
+2018-01-10 16:27:09,371 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:27:09,374 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:27:09,375 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: file-transferFlow.stage1
+2018-01-10 16:27:09,553 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-01-10 16:27:09,559 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2018-01-10 16:27:09,571 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-01-10 16:27:09,571 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-01-10 16:27:09,581 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'file-transfer'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:27:09,582 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-10 16:27:09,584 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: file-transferFlow
+2018-01-10 16:27:09,584 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: file-transferFlow.stage1
+2018-01-10 16:27:09,587 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-10 16:27:09,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=6848a051
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:27:09,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2018-01-10 16:27:09,692 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 16:26:13 IST 2018]; root of context hierarchy
+2018-01-10 16:27:09,772 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "file-transfer" shut down normally on: 1/10/18 4:27 PM *
+* Up for: 0 days, 0 hours, 0 mins, 50.896 sec                        *
+**********************************************************************
+2018-01-10 16:27:09,893 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:27:09,898 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app file-transfer
+2018-01-10 16:27:09,900 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 16:27:09,905 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 16:27:09,917 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 16:27:09,918 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 16:27:09,924 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@672fe2c0: startup date [Wed Jan 10 16:27:09 IST 2018]; root of context hierarchy
+2018-01-10 16:27:10,196 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 16:27:10,305 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx2.log
+2018-01-10 16:27:10,308 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx2.log
+2018-01-10 16:27:10,311 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-10 16:27:10,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 16:27:10,332 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-transferFlow
+2018-01-10 16:27:10,332 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6ce0e501
+2018-01-10 16:27:10,336 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-transferFlow.stage1
+2018-01-10 16:27:10,365 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:27:10,365 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:27:14,139 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:27:14,337 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 16:27:14,441 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 16:27:14,537 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 16:27:14,538 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 16:27:14,600 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 16:27:14 IST 2018]; root of context hierarchy
+2018-01-10 16:27:15,618 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 16:27:16,267 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 16:27:16,491 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx2.log
+2018-01-10 16:27:16,505 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx2.log
+2018-01-10 16:27:16,511 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-10 16:27:16,623 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 16:27:16,626 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-transferFlow
+2018-01-10 16:27:16,626 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5f631ca0
+2018-01-10 16:27:16,641 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-transferFlow.stage1
+2018-01-10 16:27:16,996 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:27:16,997 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:27:20,031 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:27:20,043 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 16:27:20,043 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 16:27:20,077 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6848a051
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:27:20,078 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6848a051
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:27:20,078 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-10 16:27:20,080 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:27:20,082 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 16:27:20,084 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-transferFlow
+2018-01-10 16:27:20,084 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-transferFlow.stage1
+2018-01-10 16:27:20,116 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: file-transferFlow on endpointUri: file:///D:/source/
+2018-01-10 16:27:20,410 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:27:20,414 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-01-10 16:27:20,414 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:27:20,414 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-01-10 16:27:20,419 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 16:27:20,434 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:27:20,435 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:27:20,436 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-transfer:type=Connector,name="connector.file.mule.default"
+2018-01-10 16:27:20,439 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-transfer                                         *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 16:27:21,421 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\123.txt
+2018-01-10 16:27:21,477 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\762984fj.txt
+2018-01-10 16:27:21,479 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\jenkins.txt
+2018-01-10 16:27:21,482 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\sample.txt
+2018-01-10 16:27:21,484 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\sample1.txt
+2018-01-10 16:28:30,542 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:28:30,545 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: file-transferFlow
+2018-01-10 16:28:30,545 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///D:/source/
+2018-01-10 16:28:30,547 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:28:30,550 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:28:30,551 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: file-transferFlow.stage1
+2018-01-10 16:28:30,641 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-01-10 16:28:30,646 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2018-01-10 16:28:30,652 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-01-10 16:28:30,652 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-01-10 16:28:30,659 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'file-transfer'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:28:30,661 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-10 16:28:30,663 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: file-transferFlow
+2018-01-10 16:28:30,663 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: file-transferFlow.stage1
+2018-01-10 16:28:30,666 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-10 16:28:30,672 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=6848a051
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:28:30,672 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2018-01-10 16:28:30,788 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 16:27:14 IST 2018]; root of context hierarchy
+2018-01-10 16:28:30,984 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "file-transfer" shut down normally on: 1/10/18 4:28 PM *
+* Up for: 0 days, 0 hours, 1 mins, 10.946 sec                        *
+**********************************************************************
+2018-01-10 16:28:31,102 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:28:31,106 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app file-transfer
+2018-01-10 16:28:31,108 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 16:28:31,119 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 16:28:31,138 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 16:28:31,138 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 16:28:31,146 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@50df7633: startup date [Wed Jan 10 16:28:31 IST 2018]; root of context hierarchy
+2018-01-10 16:28:31,398 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 16:28:31,507 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx2.log
+2018-01-10 16:28:31,510 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx2.log
+2018-01-10 16:28:31,515 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-10 16:28:31,536 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 16:28:31,536 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-transferFlow
+2018-01-10 16:28:31,537 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2a280d01
+2018-01-10 16:28:31,541 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-transferFlow.stage1
+2018-01-10 16:28:31,616 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:28:31,616 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:28:35,085 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:28:35,281 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 16:28:35,386 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 16:28:35,488 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 16:28:35,488 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 16:28:35,552 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 16:28:35 IST 2018]; root of context hierarchy
+2018-01-10 16:28:36,584 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 16:28:37,246 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 16:28:37,463 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx2.log
+2018-01-10 16:28:37,477 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx2.log
+2018-01-10 16:28:37,483 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-10 16:28:37,583 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 16:28:37,586 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-transferFlow
+2018-01-10 16:28:37,586 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@345cbf40
+2018-01-10 16:28:37,601 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-transferFlow.stage1
+2018-01-10 16:28:38,285 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:28:38,285 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:28:41,320 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:28:41,327 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 16:28:41,327 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 16:28:41,363 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3119cf6f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:28:41,363 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3119cf6f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:28:41,364 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-10 16:28:41,366 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:28:41,368 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 16:28:41,369 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-transferFlow
+2018-01-10 16:28:41,369 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-transferFlow.stage1
+2018-01-10 16:28:41,401 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: file-transferFlow on endpointUri: file:///D:/source/
+2018-01-10 16:28:41,419 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:28:41,423 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-01-10 16:28:41,423 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:28:41,423 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-01-10 16:28:41,430 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 16:28:41,444 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:28:41,444 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:28:41,446 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-transfer:type=Connector,name="connector.file.mule.default"
+2018-01-10 16:28:41,448 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-transfer                                         *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 16:29:42,654 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:29:42,858 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 16:29:42,957 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 16:29:43,052 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 16:29:43,053 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 16:29:43,119 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 16:29:43 IST 2018]; root of context hierarchy
+2018-01-10 16:29:44,141 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 16:29:44,794 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 16:29:45,006 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx2.log
+2018-01-10 16:29:45,020 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx2.log
+2018-01-10 16:29:45,026 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-10 16:29:45,125 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 16:29:45,128 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-transferFlow
+2018-01-10 16:29:45,128 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5f5effb0
+2018-01-10 16:29:45,143 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-transferFlow.stage1
+2018-01-10 16:29:45,502 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:29:45,502 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:29:48,539 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:29:48,832 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 16:29:48,832 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 16:29:48,853 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=2b0b7e5a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:29:48,853 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=2b0b7e5a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:29:48,853 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-10 16:29:48,855 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:29:48,857 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 16:29:48,858 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-transferFlow
+2018-01-10 16:29:48,859 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-transferFlow.stage1
+2018-01-10 16:29:48,890 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: file-transferFlow on endpointUri: file:///D:/source/
+2018-01-10 16:29:48,908 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:29:48,912 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-01-10 16:29:48,912 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:29:48,912 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-01-10 16:29:48,918 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 16:29:48,932 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:29:48,933 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:29:48,934 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-transfer:type=Connector,name="connector.file.mule.default"
+2018-01-10 16:29:48,937 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-transfer                                         *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 16:31:02,003 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:31:02,195 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 16:31:02,326 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 16:31:02,437 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 16:31:02,437 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 16:31:02,521 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 16:31:02 IST 2018]; root of context hierarchy
+2018-01-10 16:31:03,517 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 16:31:04,216 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 16:31:04,435 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx2.log
+2018-01-10 16:31:04,449 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx2.log
+2018-01-10 16:31:04,455 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-10 16:31:04,560 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 16:31:04,563 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-transferFlow
+2018-01-10 16:31:04,563 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5f5effb0
+2018-01-10 16:31:04,579 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-transferFlow.stage1
+2018-01-10 16:31:04,939 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:31:04,939 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:31:07,960 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:31:07,963 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 16:31:07,963 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 16:31:07,984 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=2b0b7e5a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:31:07,984 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=2b0b7e5a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:31:07,985 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-10 16:31:07,987 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:31:07,990 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 16:31:07,991 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-transferFlow
+2018-01-10 16:31:07,992 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-transferFlow.stage1
+2018-01-10 16:31:08,041 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: file-transferFlow on endpointUri: file:///D:/source/
+2018-01-10 16:31:08,377 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:31:08,381 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-01-10 16:31:08,381 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:31:08,381 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-01-10 16:31:08,387 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 16:31:08,403 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:31:08,403 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:31:08,406 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-transfer:type=Connector,name="connector.file.mule.default"
+2018-01-10 16:31:08,413 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-transfer                                         *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 16:32:49,518 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:32:49,713 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 16:32:49,815 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 16:32:49,917 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 16:32:49,918 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 16:32:49,982 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 16:32:49 IST 2018]; root of context hierarchy
+2018-01-10 16:32:51,012 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 16:32:51,661 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 16:32:51,867 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx2.log
+2018-01-10 16:32:51,880 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx2.log
+2018-01-10 16:32:51,886 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-10 16:32:51,985 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 16:32:51,988 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-transferFlow
+2018-01-10 16:32:51,988 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5f5effb0
+2018-01-10 16:32:52,002 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-transferFlow.stage1
+2018-01-10 16:32:52,360 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:32:52,360 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:32:55,396 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:32:55,407 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 16:32:55,407 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 16:32:55,443 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=2b0b7e5a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:32:55,443 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=2b0b7e5a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:32:55,444 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-10 16:32:55,447 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:32:55,449 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 16:32:55,451 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-transferFlow
+2018-01-10 16:32:55,451 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-transferFlow.stage1
+2018-01-10 16:32:55,482 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: file-transferFlow on endpointUri: file:///D:/source/
+2018-01-10 16:32:55,770 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:32:55,774 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-01-10 16:32:55,774 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:32:55,774 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-01-10 16:32:55,780 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 16:32:55,795 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:32:55,795 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:32:55,796 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-transfer:type=Connector,name="connector.file.mule.default"
+2018-01-10 16:32:55,799 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-transfer                                         *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 16:35:23,537 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:35:23,736 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 16:35:23,836 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 16:35:23,937 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 16:35:23,937 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 16:35:24,001 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 16:35:23 IST 2018]; root of context hierarchy
+2018-01-10 16:35:25,027 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 16:35:25,698 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 16:35:25,901 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx2.log
+2018-01-10 16:35:25,915 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx2.log
+2018-01-10 16:35:25,921 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-10 16:35:26,020 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 16:35:26,024 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-transferFlow
+2018-01-10 16:35:26,024 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5f5effb0
+2018-01-10 16:35:26,040 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-transferFlow.stage1
+2018-01-10 16:35:26,395 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:35:26,395 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:35:29,430 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:35:29,439 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 16:35:29,439 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 16:35:29,474 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=2b0b7e5a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:35:29,474 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=2b0b7e5a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:35:29,474 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-10 16:35:29,476 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:35:29,478 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 16:35:29,480 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-transferFlow
+2018-01-10 16:35:29,480 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-transferFlow.stage1
+2018-01-10 16:35:29,513 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: file-transferFlow on endpointUri: file:///D:/source/
+2018-01-10 16:35:29,827 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:35:29,830 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-01-10 16:35:29,831 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:35:29,831 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-01-10 16:35:29,837 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 16:35:29,850 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:35:29,851 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:35:29,852 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-transfer:type=Connector,name="connector.file.mule.default"
+2018-01-10 16:35:29,855 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-transfer                                         *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 16:35:55,862 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\sample.txt
+2018-01-10 16:35:55,928 [[file-transfer].file-transferFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - file transfered successfully
+2018-01-10 16:35:55,949 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.582602069'. Object is: FileMessageDispatcher
+2018-01-10 16:35:55,949 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.582602069'. Object is: FileMessageDispatcher
+2018-01-10 16:35:55,953 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\sample.txt
+2018-01-10 16:36:08,864 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\hello.txt
+2018-01-10 16:36:08,867 [[file-transfer].file-transferFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - file transfered successfully
+2018-01-10 16:36:08,872 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\hello.txt
+2018-01-10 16:37:04,982 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:37:04,985 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: file-transferFlow
+2018-01-10 16:37:04,986 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file:///D:/source/
+2018-01-10 16:37:04,988 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:37:04,990 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:37:04,992 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: file-transferFlow.stage1
+2018-01-10 16:37:04,998 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-01-10 16:37:05,005 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2018-01-10 16:37:05,013 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'connector.file.mule.default.dispatcher.582602069'. Object is: FileMessageDispatcher
+2018-01-10 16:37:05,013 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'connector.file.mule.default.dispatcher.582602069'. Object is: FileMessageDispatcher
+2018-01-10 16:37:05,018 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-01-10 16:37:05,018 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-01-10 16:37:05,025 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'file-transfer'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:37:05,026 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-10 16:37:05,027 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: file-transferFlow
+2018-01-10 16:37:05,028 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: file-transferFlow.stage1
+2018-01-10 16:37:05,031 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-10 16:37:05,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=2b0b7e5a
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:37:05,037 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2018-01-10 16:37:05,160 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 16:35:23 IST 2018]; root of context hierarchy
+2018-01-10 16:37:05,254 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "file-transfer" shut down normally on: 1/10/18 4:37 PM *
+* Up for: 0 days, 0 hours, 1 mins, 35.822 sec                        *
+**********************************************************************
+2018-01-10 16:37:05,391 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:37:05,395 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app file-transfer
+2018-01-10 16:37:05,397 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 16:37:05,400 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 16:37:05,410 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 16:37:05,410 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 16:37:05,416 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@404de4dc: startup date [Wed Jan 10 16:37:05 IST 2018]; root of context hierarchy
+2018-01-10 16:37:05,619 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 16:37:08,948 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'file-transfer'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:37:09,148 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-10 16:37:09,252 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-10 16:37:09,350 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-10 16:37:09,351 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-10 16:37:09,404 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@544630b7: startup date [Wed Jan 10 16:37:09 IST 2018]; root of context hierarchy
+2018-01-10 16:37:10,346 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-10 16:37:11,014 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-10 16:37:11,235 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-tx-log\tx2.log
+2018-01-10 16:37:11,249 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx1.log and C:\Users\EAI\AnypointStudio\workspace\.mule\.\.mule\file-transfer\queue-xa-tx-log\tx2.log
+2018-01-10 16:37:11,254 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-01-10 16:37:11,356 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-10 16:37:11,359 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: file-transferFlow
+2018-01-10 16:37:11,359 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@345cbf40
+2018-01-10 16:37:11,374 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: file-transferFlow.stage1
+2018-01-10 16:37:11,726 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:37:11,726 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\Users\EAI\AnypointStudio\workspace\.mule\apps\file-transfer\file-transfer.xml'}]"
+2018-01-10 16:37:14,763 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'file-transfer'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:37:14,771 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-01-10 16:37:14,771 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-01-10 16:37:14,803 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3119cf6f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:37:14,803 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3119cf6f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-01-10 16:37:14,803 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-01-10 16:37:14,805 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-10 16:37:14,807 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-01-10 16:37:14,809 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: file-transferFlow
+2018-01-10 16:37:14,809 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: file-transferFlow.stage1
+2018-01-10 16:37:15,122 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: file-transferFlow on endpointUri: file:///D:/source/
+2018-01-10 16:37:15,139 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:37:15,143 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-01-10 16:37:15,144 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-01-10 16:37:15,144 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-01-10 16:37:15,150 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-01-10 16:37:15,164 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:37:15,164 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.file-transfer:type=Endpoint,service="file-transferFlow",connector=connector.file.mule.default,name="endpoint..D.source"
+2018-01-10 16:37:15,165 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.file-transfer:type=Connector,name="connector.file.mule.default"
+2018-01-10 16:37:15,168 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: file-transfer                                         *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-01-10 16:37:16,160 [[file-transfer].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: D:\source\13425.txt
+2018-01-10 16:37:16,220 [[file-transfer].file-transferFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - file transfered successfully
+2018-01-10 16:37:16,241 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.992862304'. Object is: FileMessageDispatcher
+2018-01-10 16:37:16,241 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.992862304'. Object is: FileMessageDispatcher
+2018-01-10 16:37:16,245 [[file-transfer].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: D:\destination\13425.txt

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.munit.launchconfig">
+<listAttribute key="Mpath">
+<listEntry value="C:\Users\EAI\AnypointStudio\workspace\samplemunit\src\test\munit\samplemunit-test-suite.xml"/>
+</listAttribute>
+<stringAttribute key="Ppath" value="C:\Users\EAI\AnypointStudio\workspace\samplemunit"/>
+<stringAttribute key="launch_mule_server_version" value="org.mule.tooling.server.3.8.5.ee"/>
+<listAttribute key="mule-project-names">
+<listEntry value="samplemunit"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="samplemunit-test-suite.xml"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="samplemunit"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.library.path=&#13;&#10;-DmunitProjectName=samplemunit&#13;&#10;-Dlog4j.skipJansi=true"/>
+<stringAttribute key="resource" value="samplemunit-test-suite.xml"/>
+</launchConfiguration>
